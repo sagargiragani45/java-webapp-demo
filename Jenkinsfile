@@ -45,7 +45,7 @@ pipeline {
                 sh '''
                 docker stop java-webapp-demo || true
                 docker rm java-webapp-demo || true
-                docker run -d -p 9090:8080 --name java-webapp-demo $IMAGE_NAME:latest
+                docker run -d -p 9091:8080 --name java-webapp-demo $IMAGE_NAME:latest
                 '''
             }
         }
